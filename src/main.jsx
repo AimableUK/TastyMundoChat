@@ -4,6 +4,7 @@ import "./index.css";
 import App from "./App.jsx";
 import { BrowserRouter } from "react-router-dom";
 import { CssBaseline } from "@mui/material";
+import React from 'react';
 
 const Root = () => {
   return (
