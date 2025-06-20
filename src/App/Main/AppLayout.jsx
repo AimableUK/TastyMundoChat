@@ -1,18 +1,13 @@
 import { AppProvider } from "@toolpad/core/AppProvider";
 import { DashboardLayout } from "@toolpad/core/DashboardLayout";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
-import BarChartIcon from "@mui/icons-material/BarChart";
-import InsertChartIcon from "@mui/icons-material/InsertChart";
 import PageTitleUpdater from "./TitleUpdater";
 import { createToolpadRouter } from "./toolpadRouter";
-import React from "react";
 import { customTheme } from "../../Theme";
 import ToolbarActionsMenu from "./ToolbarActionsMenu";
 import { useMediaQuery } from "@mui/material";
-import RateReviewIcon from '@mui/icons-material/RateReview';
-import {Box} from "@mui/material";
-import navigation from "../AICHAT/ChatNavigation"
-import TastyMundoLogo from "../../assets/TastyMundo.png"
+import navigation from "../AICHAT/ChatNavigation";
+import TastyMundoLogo from "/public/TastyMundo.png";
 
 const AppLayout = () => {
   const location = useLocation();

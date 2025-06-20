@@ -1,5 +1,5 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
-import tastyMundoLogo from "../../assets/TastyMundo.png";
+import tastyMundoLogo from "/public/TastyMundo.png";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import { useEffect, useRef, useState } from "react";
 import { getRecipeFromMistral } from "./AI/ai";
@@ -85,7 +85,7 @@ const ChatInterface = () => {
               component="img"
               src={tastyMundoLogo}
               alt="TastyMundo Logo"
-              sx={{ width: 80, mb: 2 }}
+              sx={{ width: 100, mb: 2 }}
             />
 
             <Typography variant="h4" fontWeight={600}>
@@ -129,7 +129,7 @@ const ChatInterface = () => {
           }}
         >
           <form
-            onSubmit={handleSubmit}
+            action={handleSubmit}
             autoComplete="off"
             style={{
               display: "flex",
