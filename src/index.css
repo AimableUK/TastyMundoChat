@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.glowing-box-shadow {
+    padding: 20px 40px;
+    font-size: 2rem;
+    color: #8d6363;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 15px #ff00ff,
+        0 0 40px #ff00ff;
+    animation: glow 1.5s infinite alternate;
+}
+
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 1px #ff00ff, 0 0 1px #ff00ff, 0 0 1px #ff00ff,
+            0 0 1px #ff00ff;
+    }
+
+    to {
+        box-shadow: 0 0 11px #5dade2, 0 0 11px #5dade2, 0 0 11px #5dade2,
+            0 0 11px #5dade2;
+    }
+}
