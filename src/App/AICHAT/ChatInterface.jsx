@@ -3,7 +3,7 @@ import tastyMundoLogo from "/public/tastyMundo.png";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import { useEffect, useRef, useState } from "react";
 import { getRecipeFromMistral } from "./AI/ai";
-import AIRecipe from "./AIRecipe/AiRecipe";
+import AIRecipe from "./AIRecipe/AIRecipe";
 
 const ChatInterface = () => {
   const isTablet = useMediaQuery("(max-width:768px)");
