@@ -7,7 +7,7 @@ import { customTheme } from "../../Theme";
 import ToolbarActionsMenu from "./ToolbarActionsMenu";
 import { useMediaQuery } from "@mui/material";
 import navigation from "../AICHAT/ChatNavigation";
-import TastyMundoLogo from "/public/tastyMundo.png";
+import TastyMundoLogo from "/tastyMundo.png";
 
 const AppLayout = () => {
   const location = useLocation();

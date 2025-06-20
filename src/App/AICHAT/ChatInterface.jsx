@@ -1,5 +1,5 @@
 import { Box, Typography, useMediaQuery } from "@mui/material";
-import tastyMundoLogo from "/public/tastyMundo.png";
+import tastyMundoLogo from "/tastyMundo.png";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 import { useEffect, useRef, useState } from "react";
 import { getRecipeFromMistral } from "./AI/ai";

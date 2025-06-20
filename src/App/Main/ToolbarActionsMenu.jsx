@@ -20,7 +20,6 @@ import {
   SvgIcon,
   useMediaQuery,
 } from "@mui/material";
-import NotificationsIcon from "@mui/icons-material/Notifications";
 import Settings from "@mui/icons-material/Settings";
 import PersonIcon from "@mui/icons-material/Person";
 import LogoutIcon from "@mui/icons-material/Logout";
