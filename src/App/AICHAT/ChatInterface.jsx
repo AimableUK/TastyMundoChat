@@ -34,7 +34,7 @@ const ChatInterface = () => {
       const recipeMarkdown = await getRecipeFromMistral(ingredients);
       setRecipe(recipeMarkdown);
     } catch (err) {
-      console.error("Error in getRecipe:", err.message);
+      console.error("Error in trying to receive the receipe:", err.message);
     }
   };
 
