@@ -74,21 +74,15 @@ const ChatInterface = () => {
             )}
           </section>
         ) : (
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="center"
-            justifyContent="center"
-            textAlign="center"
-          >
+          <Box className="flex flex-col items-center justify-center text-center">
             <Box
               component="img"
               src={tastyMundoLogo}
               alt="TastyMundo Logo"
-              sx={{ width: 100, mb: 2 }}
+              sx={{ width: isTablet ? 80 : 100, mb: 2 }}
             />
 
-            <Typography variant="h4" fontWeight={600}>
+            <Typography fontWeight={600}>
               How can we assist you Today?
             </Typography>
 
@@ -103,7 +97,7 @@ const ChatInterface = () => {
               and start crafting delicious dishes effortlessly.
             </Typography>
             <Box mt="10px" textAlign="start">
-              <Typography color="#BDBDBD" fontWeight="bold">
+              <Typography color="#BDBDBD" fontWeight="bold" textAlign="center">
                 Create a Custom Recipe from Your Ingredients
               </Typography>
             </Box>
