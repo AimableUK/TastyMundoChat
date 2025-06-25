@@ -24,9 +24,15 @@ const ChatInterface = () => {
     }
   }, [recipe]);
 
-  const handleSubmit = (formData) => {
-    const newIngredient = formData.get("ingredient");
-    setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    const newIngredient = formData.get("ingredient").trim();
+
+    if (newIngredient) {
+      setIngredients((prevIngredients) => [...prevIngredients, newIngredient]);
+      event.target.reset();
+    }
   };
 
   const getRecipe = async () => {
@@ -123,7 +129,7 @@ const ChatInterface = () => {
           }}
         >
           <form
-            action={handleSubmit}
+            onSubmit={handleSubmit}
             autoComplete="off"
             style={{
               display: "flex",

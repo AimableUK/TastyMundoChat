@@ -2,7 +2,7 @@ import ReactMarkdown from "react-markdown";
 
 function AIRecipe({recipe}) {
   return (
-    <div className="">
+    <div>
       <section
         className="-mt-56 mb-20 text-gray-200"
         aria-live="polite"
